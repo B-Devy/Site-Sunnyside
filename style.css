@@ -7,19 +7,18 @@ body {
     margin:auto;
     padding:0;
     box-sizing: border-box;
-    max-width: 1200px;
+    max-width: 1440px;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    border: 2px green dotted;
+    /*border: 2px green dotted;*/
 
 }
 /*-------------HEADER ET NAV------------------*/
 header {
-    border: dotted 2px red;
+    /*border: dotted 2px red;*/
     width: 100%;
     margin: auto;
     margin-top: 0px !important;
@@ -33,7 +32,7 @@ header {
 header ul
 {
     list-style: none;
-    border: 2px black dotted;
+    /*border: 2px black dotted;*/
     margin: 0 0 0 auto;
     height: 50px;
 
@@ -48,7 +47,7 @@ header ul li
 {
     
     margin-right: 3vw;
-    border: green 2px dotted;
+    /*border: green 2px dotted;*/
     width: 50px;
     height: 100%;
     display:flex;
@@ -61,7 +60,7 @@ header ul li
 
 header ul li a
 {
-    border: 2px blue dotted;
+    /*border: 2px blue dotted;*/
     display: block;
     list-style-type: none;
     text-decoration: none;
@@ -75,7 +74,8 @@ header ul li a
 
 header ul li a:hover
 {
-    border: 2px yellow dotted;
+    /*border: 2px yellow dotted;*/
+    transition: 0.3s;
     list-style-type: none;
     text-decoration: none;
     color: white;
@@ -91,7 +91,7 @@ header ul li a:hover
 }
 
 header img {
-    border: black 2px dotted;
+    /*border: black 2px dotted;*/
     margin-left: 2vw;
 }
 
@@ -110,20 +110,21 @@ header img {
     max-width: 100%;
     height: 600px;
     margin: 0 auto;
-    border: yellow 2px dotted;
+    /*border: yellow 2px dotted;*/
 }
 
 h1
 {
     font-family: 'Fraunces';
     font-size: 35px;
+    font-weight: 900;
     color: white;
     letter-spacing: 8px;
     
 }
 
 #title {
-    border: peru 2px dotted;
+    /*border: peru 2px dotted;*/
     height: 80%;
 }
 
@@ -135,7 +136,7 @@ h1
 }
 
 .etage {
-    border: black 2px dotted;
+    /*border: black 2px dotted;*/
     height: 50vh;
     width:100%;
     display: flex;
@@ -144,7 +145,7 @@ h1
 }
 
 .container {
-    border: red 2px dotted;
+    /*border: red 2px dotted;*/
     width: 50%;
     height:100%;
     display:flex;
@@ -159,7 +160,7 @@ h1
     justify-content: center;
     width: 70%;
     margin: auto;
-    border: blue dotted 2px;
+    /*border: blue dotted 2px;*/
 
 }
 
@@ -170,8 +171,8 @@ h1
     align-items: center;
     width: 70%;
     margin: auto;
-    border: blue dotted 2px;
-    margin-top: 50%;
+    /*border: blue dotted 2px;*/
+    margin-bottom: 7%;
     
 }
 
@@ -213,30 +214,63 @@ p {
     color: rgb(120, 120, 120);
 }
 
-button {
+#btn1 {
+    display: block;
     font-family: 'Fraunces';
+    border-style: none;
+    background-color:hsl(51, 100%, 75%);
+    width: 100px;
+    height: 8px;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+#btn1:hover {
+    background-color:hsl(51, 100%, 49%);
+    transition: 0.3s;
+
+}
+
+#btn2 {
+    display: block;
+    font-family: 'Fraunces';
+    border-style: none;
+    background-color:hsl(7, 99%, 85%);
+    width: 100px;
+    height: 8px;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#btn2:hover {
+    background-color:hsl(7, 99%, 70%);
+    transition: 0.3s;
+
 }
 
 h3 {
     font-family: 'Fraunces';
-    color: rgb(90, 90, 90);
+    color: hsl(198, 62%, 26%);
     text-align: center;
 }
 
 /*-------------TESTIMONIALS---------------*/
 
 #testimonials {
+    padding-top: 100px;
+   
     background-color: rgb(255, 251, 248);
-    height: 60vh;
+    height: 600px;
     width:100%;
 
 }
 
-#testimonials div{
-    border: purple dotted 2px;
-}
 
 #gallerie {
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
@@ -245,8 +279,10 @@ h3 {
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    width:144px;
-    height: 144px;
+    width:90px;
+    height: 90px;
+    background-size: cover;
+    margin-bottom: 40px;
 }
 
 .fiche {
@@ -258,9 +294,120 @@ h3 {
 
 }
 
-/*
+
+.nom {
+    color: black;
+    font-family: 'Fraunces';
+    margin-top: 55px;
+    margin-bottom: -10px;
+    /*border: blue 2px dotted;*/
+
+}
+
+.poste {
+    color:darkgray;
+    /*border: blue 2px dotted;*/
+}
+
+
+
+/*---------BANDE D IMAGE--------*/
+
+#bande {
+    width: 100%;
+    margin:auto;
+    height:450px;
+    display: flex;
+    flex-direction: row;
+   
+    /*border: blue 2px dotted;*/
+}
+
+#bande img {
+    width: 100%;
+    
+}
+
+/*---------FOOTER--------*/
+
+footer {
+    width: 100%;
+    background-color: #90d4c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logofooter {
+    margin-top: 50px;    
+    margin-bottom: 50px;
+}
+
+#nav-footer {
+    /*border: black 2px dotted;*/
+    display: flex;
+    justify-content: space-around;
+    width: 20vw;
+    margin-bottom: 50px;
+}
+
+#nav-footer li{
+    display: block;
+    list-style-type: none;
+    font-family: 'Barlow';
+    font-weight: 600;
+    /*border: red 2px dotted;*/
+    color:#2d7464;
+
+}
+
+#nav-footer li:hover {
+    color:white;
+    transition: 0.3s;
+
+}
+
+/* mettre le svg sur un navigateur en drag. 
+f12 clique droit, modifier le svg et copier . La couleur est changeable*/
+
+#faceb :hover{
+    fill: white;
+    transition: 0.3s;
+}
+
+#insta :hover{
+    fill: white;
+    transition: 0.3s;
+}
+
+#twitt :hover{
+    fill: white;
+    transition: 0.3s;
+}
+
+#pinter :hover{
+    fill: white;
+    transition: 0.3s;
+}
+
+#reseaux {
+    width: 200px;
+    /*border: black dotted 2px;*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+#reseaux li {
+    list-style-type: none;
+    
+}
+
+/*-----------CREDITS------------*/
+
 .attribution { 
-    font-size: 11px; 
+    font-size: 18px; 
     text-align: center; 
 }
 
@@ -268,7 +415,7 @@ h3 {
 
 .attribution a {
      color: hsl(228, 45%, 44%); 
-    }*/
+    }
 
 
 /* @media screen and (375px mobile, desktop: 1440;    
