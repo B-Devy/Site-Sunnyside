@@ -349,11 +349,13 @@ footer {
     justify-content: space-around;
     width: 20vw;
     margin-bottom: 50px;
+    list-style-type: none;
 }
 
-#nav-footer li{
+#nav-footer a {
     display: block;
     list-style-type: none;
+    text-decoration: none;
     font-family: 'Barlow';
     font-weight: 600;
     /*border: red 2px dotted;*/
@@ -361,7 +363,7 @@ footer {
 
 }
 
-#nav-footer li:hover {
+#nav-footer a:hover {
     color:white;
     transition: 0.3s;
 
